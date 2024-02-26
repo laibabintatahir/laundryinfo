@@ -1,0 +1,280 @@
+/* Updated styles for .highlightt */
+.highlightt {
+  color: #b41414;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Your existing styles here */
+/* ..............head..............*/
+.head {
+  background-color: #8d866c;
+  padding: 5px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+}
+.head i {
+  margin-right: 10px;
+}
+
+.head a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.head label {
+  margin-right: 30px;
+  font-size: 13px;
+}
+/*................. Header Styles................ */
+header {
+  background-color: #f6f6f6;
+  padding: 10px 0;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  font-family: "Cookie", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo .accent {
+  color: #b41414;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+nav ul li a:hover {
+  color: #8d866c;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    justify-content: space-evenly;
+  }
+
+  nav ul {
+    margin-right: 0;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  nav ul li a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+/* ..............hero section.............. */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+.content-container {
+  flex: 1;
+  padding: 0 20px;
+  margin-left: 10%;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.highlight {
+  color: #111111;
+  margin-bottom: 0px;
+}
+.highlightt {
+  color: #b41914;
+  margin-top: 2px;
+  font-size: 30px;
+}
+
+.text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 40px;
+}
+
+.glowing-button {
+  padding: 10px 20px;
+  background-color: #b41414;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.glowing-button.outlined {
+  background-color: transparent;
+  border: 2px solid #b41414;
+  color: #333;
+  text-decoration: none;
+}
+.home__img {
+  background: url(../images/hero-img.png);
+  background-repeat: no-repeat;
+  width: 440px;
+  height: 750px;
+  margin-left: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .home__img {
+    order: initial;
+    justify-self: center;
+  }
+
+  .home__img {
+    width: 200px;
+    height: 200px;
+    margin-left: 0%;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .content-container {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    color: #111111;
+    margin-bottom: 0px;
+  }
+
+  .highlightt {
+    color: #b41414;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .button-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .glowing-button.outlined {
+    background-color: transparent;
+    border: 2px solid #b41414;
+    color: #333;
+    text-decoration: none;
+  }
+}
+
+.subheading {
+  color: #800020;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #800020;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-container {
+    margin-bottom: 40px;
+  }
+  .heading {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
